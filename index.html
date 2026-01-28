@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/logo_.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaana Foundation - Empowering Futures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="/src/js/main.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-900 text-slate-50 overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 top-0 transition-all duration-300 group" id="navbar">
+        <!-- Top Bar -->
+        <div class="hidden md:block bg-black/40 text-white text-xs border-b border-white/10 backdrop-blur-sm transition-all duration-300"
+            id="top-bar">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Left: Contact -->
+                <div class="flex items-center">
+                    <div class="px-6 py-3 border-r border-white/10 flex items-center gap-2">
+                        <i class="fas fa-phone-alt text-amber-400"></i> <span
+                            class="tracking-wide">+91-9920282984</span>
+                    </div>
+                    <div class="px-6 py-3 border-r border-white/10 flex items-center gap-2">
+                        <i class="fas fa-envelope text-amber-400"></i> <span
+                            class="tracking-wide">info@viaanafoundation.com</span>
+                    </div>
+                </div>
+                <!-- Right: Social -->
+                <div class="flex items-center border-l border-white/10">
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="bg-black/20 backdrop-blur-sm border-b border-white/5 transition-all duration-300"
+            id="main-nav-container">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <!-- Filter to make the logo Amber-400 roughly -->
+                    <img src="img/logo_.png" alt="Viaana"
+                        class="h-10 transition-transform duration-500 brightness-0 invert sepia saturate-2000 hue-rotate-[0deg] contrast-100"
+                        style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(5deg) text-amber-400;">
+                    <!-- Using text for the name as the image might just be the icon/star -->
+                    <span class="text-3xl font-bold font-serif text-amber-400 tracking-[0.2em] uppercase">Viaana</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-10">
+                    <a href="index.html"
+                        class="text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-amber-400">Home</a>
+                    <a href="pages/about.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">About</a>
+                    <a href="pages/get-involved.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400 whitespace-nowrap">Get
+                        Involved</a>
+                    <a href="pages/causes.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">Causes</a>
+                    <a href="pages/contact.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">Contact</a>
+                </div>
+
+                <button class="md:hidden text-2xl text-white hover:text-amber-400 transition-colors"
+                    id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden bg-slate-900 border-t border-slate-700 absolute w-full left-0 z-40" id="mobile-menu">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="index.html"
+                    class="block text-lg text-amber-400 font-bold border-b border-slate-800 pb-2">Home</a>
+                <a href="pages/about.html"
+                    class="block text-lg hover:text-amber-400 border-b border-slate-800 pb-2">About</a>
+                <a href="pages/get-involved.html"
+                    class="block text-lg hover:text-amber-400 border-b border-slate-800 pb-2">Get
+                    Involved</a>
+                <a href="pages/causes.html"
+                    class="block text-lg hover:text-amber-400 border-b border-slate-800 pb-2">Causes</a>
+                <a href="pages/contact.html" class="block text-lg hover:text-amber-400 font-bold">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="img/first_slide.jpg" alt="Hero" class="w-full h-full object-cover opacity-40 scale-105"
+                id="hero-bg">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-6 z-10 relative text-center">
+            <p class="text-amber-400 font-medium tracking-[0.2em] mb-4 uppercase translate-y-10 opacity-0 hero-elem">
+                Hope • Care • Future</p>
+            <h1
+                class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight translate-y-10 opacity-0 hero-elem">
+                Let's be <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-500">Kind</span> <br>
+                For Children
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 translate-y-10 opacity-0 hero-elem">
+                Every child deserves kindness—not just in words, but in action. Join us in building a future filled with
+                hope, love, and endless possibilities.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center translate-y-10 opacity-0 hero-elem">
+                <a href="about.html" class="btn-outline">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70">
+            <i class="fas fa-chevron-down text-2xl text-white"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding relative overflow-hidden">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Image Side -->
+            <div class="relative group about-img-container opacity-0 translate-x-[-50px]">
+                <div
+                    class="absolute -inset-4 bg-gradient-to-r from-amber-400 to-orange-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-1000">
+                </div>
+                <img src="img/happy_picture.jpg" alt="About"
+                    class="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover grayscale group-hover:grayscale-0 transition duration-700 ease-in-out">
+                <!-- Floating Card -->
+                <div
+                    class="absolute -bottom-6 -right-6 glass-card p-6 max-w-[200px] hidden md:block transform transition hover:scale-105">
+                    <p class="text-4xl font-serif font-bold text-amber-400 mb-1 counter" data-target="15">0</p>
+                    <p class="text-sm text-slate-300">Years of Impact</p>
+                </div>
+            </div>
+
+            <!-- Content Side -->
+            <div class="about-content opacity-0 translate-x-[50px]">
+                <span class="text-amber-400 font-bold uppercase tracking-wider text-sm mb-2 block">Who We Are</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Worldwide Non-profit <br>Charity Organization</h2>
+                <div class="space-y-6 text-slate-300 leading-relaxed">
+                    <p>
+                        Viaana Foundation was born from a simple yet profound belief—that every child, especially young
+                        girls, deserves the power of education and the promise of a better future.
+                    </p>
+                    <p>
+                        What began as a mission to uplift children deprived of learning opportunities due to financial
+                        and societal barriers has grown into a movement for change.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex gap-4">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-12 h-12 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-400">
+                            <i class="fas fa-hands-helping text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Help</p>
+                            <p class="text-xs text-slate-400">Support Us</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-12 h-12 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-400">
+                            <i class="fas fa-globe-americas text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Impact</p>
+                            <p class="text-xs text-slate-400">Global Reach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes / Services -->
+    <section id="causes" class="section-padding bg-slate-800/50">
+        <div class="container mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 section-header opacity-0 translate-y-10">
+                <span class="text-amber-400 font-bold uppercase tracking-wider text-sm">What We Do</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Our Causes</h2>
+                <p class="text-slate-400">We believe that we can save more lives with you.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="cause-card glass-card overflow-hidden group hover:bg-slate-800 transition-colors duration-300 opacity-0 translate-y-10">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="img/causes-1.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-amber-400 transition-colors">
+                            Vocational Training</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-3">
+                            Vocational training is key to opening doors for employment and personal growth. We offer
+                            programs that equip individuals with skills.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center text-amber-400 font-bold hover:gap-2 transition-all">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="cause-card glass-card overflow-hidden group hover:bg-slate-800 transition-colors duration-300 opacity-0 translate-y-10">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="img/causes-2.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-amber-400 transition-colors">
+                            Women Empowerment</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-3">
+                            We empower women by providing the tools they need to succeed—whether through skills training
+                            or financial independence.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center text-amber-400 font-bold hover:gap-2 transition-all">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="cause-card glass-card overflow-hidden group hover:bg-slate-800 transition-colors duration-300 opacity-0 translate-y-10">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="img/causes-3.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-amber-400 transition-colors">
+                            Healthcare</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-3">
+                            Access to quality healthcare is a basic right for all. Viaana Foundation works to provide
+                            essential health services.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center text-amber-400 font-bold hover:gap-2 transition-all">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Parallax -->
+    <section class="relative py-24 bg-fixed bg-cover bg-center" style="background-image: url('img/together.jpg');">
+        <div class="absolute inset-0 bg-slate-900/90"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div
+                    class="stat-item flex items-center justify-center gap-4 p-4 hover:bg-white/5 rounded-lg transition-colors">
+                    <i class="fas fa-globe-asia text-5xl text-amber-400"></i>
+                    <div class="text-left">
+                        <div class="text-4xl font-bold text-white counter" data-target="150">0</div>
+                        <p class="text-slate-300 font-medium uppercase tracking-wider text-sm">Countries</p>
+                    </div>
+                </div>
+                <!-- Stat 2 -->
+                <div
+                    class="stat-item flex items-center justify-center gap-4 p-4 hover:bg-white/5 rounded-lg transition-colors">
+                    <i class="fas fa-users text-5xl text-amber-400"></i>
+                    <div class="text-left">
+                        <div class="text-4xl font-bold text-white counter" data-target="400">0</div>
+                        <p class="text-slate-300 font-medium uppercase tracking-wider text-sm">Volunteers</p>
+                    </div>
+                </div>
+                <!-- Stat 3 -->
+                <div
+                    class="stat-item flex items-center justify-center gap-4 p-4 hover:bg-white/5 rounded-lg transition-colors">
+                    <i class="fas fa-bullseye text-5xl text-amber-400"></i>
+                    <div class="text-left">
+                        <div class="flex items-center">
+                            <span class="text-2xl font-bold text-amber-400 mr-1">$</span>
+                            <div class="text-4xl font-bold text-white counter" data-target="10000">0</div>
+                        </div>
+                        <p class="text-slate-300 font-medium uppercase tracking-wider text-sm">Our Goal</p>
+                    </div>
+                </div>
+                <!-- Stat 4 -->
+                <div
+                    class="stat-item flex items-center justify-center gap-4 p-4 hover:bg-white/5 rounded-lg transition-colors">
+                    <i class="fas fa-hand-holding-usd text-5xl text-amber-400"></i>
+                    <div class="text-left">
+                        <div class="flex items-center">
+                            <span class="text-2xl font-bold text-amber-400 mr-1">$</span>
+                            <div class="text-4xl font-bold text-white counter" data-target="5000">0</div>
+                        </div>
+                        <p class="text-slate-300 font-medium uppercase tracking-wider text-sm">Raised</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer/Contact Combined -->
+    <section id="volunteer" class="section-padding relative">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-amber-400/5 skew-x-12 pointer-events-none"></div>
+
+        <div class="container mx-auto grid lg:grid-cols-2 gap-16">
+            <!-- Text Side -->
+            <div class="space-y-8 self-center">
+                <span class="text-amber-400 font-bold uppercase tracking-wider text-sm">Join Us</span>
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Let's Make A Difference <br> In The Lives Of Others
+                </h2>
+                <p class="text-slate-400 text-lg">
+                    Become a part of our community of change-makers. Volunteer your time and skills to directly support
+                    our programs. Your contribution will make a significant impact.
+                </p>
+
+                <div class="flex gap-4">
+                    <div class="p-4 bg-slate-800 rounded-xl border border-slate-700 flex-1">
+                        <h4 class="text-xl font-bold text-amber-400 mb-2">Be a Volunteer</h4>
+                        <p class="text-sm text-slate-400">Join our team of dedicated volunteers.</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-xl border border-slate-700 flex-1">
+                        <h4 class="text-xl font-bold text-amber-400 mb-2">Donate</h4>
+                        <p class="text-sm text-slate-400">Support our cause financially.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Side -->
+            <div id="contact" class="glass-card p-8 md:p-10 shadow-2xl border-t-4 border-amber-400 relative">
+                <h3 class="text-2xl font-bold mb-6">Become a Volunteer</h3>
+                <form action="https://formsubmit.co/lazyclick1@gmail.com" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-500 text-white"
+                            required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-500 text-white"
+                            required>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="4" placeholder="Why you want to join us?"
+                            class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-500 text-white"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary py-4 text-lg shadow-lg shadow-amber-400/20">Send
+                        Request</button>
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="flex items-center gap-3 mb-6">
+                        <img src="img/logo_.png" alt="Viaana" class="h-8 w-8 brightness-0 invert">
+                        <span class="text-2xl font-serif font-bold">Viaana</span>
+                    </a>
+                    <p class="text-slate-400 max-w-sm mb-6">
+                        A world where every child has the right to learn, every woman has the power to rise, and every
+                        community has the resources to thrive.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="about.html" class="hover:text-amber-400 transition-colors">About Us</a></li>
+                        <li><a href="causes.html" class="hover:text-amber-400 transition-colors">Our Causes</a></li>
+                        <li><a href="get-involved.html" class="hover:text-amber-400 transition-colors">Volunteer</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:text-amber-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-amber-400"></i>
+                            +91-9920282984</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-amber-400"></i>
+                            info@viaana.com</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-amber-400"></i> Mumbai,
+                            India</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2026 Viaana Foundation. All Rights Reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

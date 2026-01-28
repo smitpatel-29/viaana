@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fdbe33;
+  --color-secondary: #20212b;
+  --color-primary-hover: #e0a82e;
+  --color-light-bg: #f3f6ff;
+  --font-sans: "Quicksand", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body,
+  html {
+    font-family: var(--font-sans);
+    @apply antialiased bg-slate-900 text-slate-100;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-primary text-slate-900 font-bold rounded-full transition-all duration-300 hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(251,191,36,0.5)] transform hover:-translate-y-1;
+  }
+  .btn-outline {
+    @apply px-8 py-3 border border-primary text-primary font-bold rounded-full transition-all duration-300 hover:bg-primary hover:text-slate-900;
+  }
+  .glass-card {
+    @apply bg-slate-800/50 backdrop-blur-md border border-slate-700 rounded-2xl;
+  }
+  .section-padding {
+    @apply px-4 md:px-8;
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #fbbf24, #f59e0b);
+}

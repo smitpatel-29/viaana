@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/logo_.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Involved - Viaana Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="/src/js/main.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-900 text-slate-50 overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 top-0 transition-all duration-300 group" id="navbar">
+        <!-- Top Bar -->
+        <div class="hidden md:block bg-black/40 text-white text-xs border-b border-white/10 backdrop-blur-sm transition-all duration-300"
+            id="top-bar">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Left: Contact -->
+                <div class="flex items-center">
+                    <div class="px-6 py-3 border-r border-white/10 flex items-center gap-2">
+                        <i class="fas fa-phone-alt text-amber-400"></i> <span
+                            class="tracking-wide">+91-9920282984</span>
+                    </div>
+                    <div class="px-6 py-3 border-r border-white/10 flex items-center gap-2">
+                        <i class="fas fa-envelope text-amber-400"></i> <span
+                            class="tracking-wide">info@viaanafoundation.com</span>
+                    </div>
+                </div>
+                <!-- Right: Social -->
+                <div class="flex items-center border-l border-white/10">
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="px-5 py-3 border-r border-white/10 hover:text-amber-400 transition-colors"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="bg-slate-900 shadow-xl backdrop-blur-sm border-b border-white/5 transition-all duration-300"
+            id="main-nav-container">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3 group">
+                    <img src="/img/logo_.png" alt="Viaana"
+                        class="h-10 transition-transform duration-500 brightness-0 invert sepia saturate-2000 hue-rotate-[0deg] contrast-100"
+                        style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(5deg) text-amber-400;">
+                    <span class="text-3xl font-bold font-serif text-amber-400 tracking-[0.2em] uppercase">Viaana</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-10">
+                    <a href="../index.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">Home</a>
+                    <a href="about.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">About</a>
+                    <a href="get-involved.html"
+                        class="text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-amber-400 whitespace-nowrap">Get
+                        Involved</a>
+                    <a href="causes.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">Causes</a>
+                    <a href="contact.html"
+                        class="text-white hover:text-amber-400 text-sm font-medium uppercase tracking-widest transition-colors py-2 border-b-2 border-transparent hover:border-amber-400">Contact</a>
+                </div>
+
+                <button class="md:hidden text-2xl text-white hover:text-amber-400 transition-colors"
+                    id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden bg-slate-900 border-t border-slate-700 absolute w-full left-0 z-40" id="mobile-menu">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="../index.html" class="block text-lg hover:text-amber-400 border-b border-slate-800 pb-2">Home</a>
+                <a href="about.html" class="block text-lg hover:text-amber-400 border-b border-slate-800 pb-2">About</a>
+                <a href="get-involved.html"
+                    class="block text-lg text-amber-400 font-bold border-b border-slate-800 pb-2">Get Involved</a>
+                <a href="causes.html"
+                    class="block text-lg hover:text-amber-400 border-b border-slate-800 pb-2">Causes</a>
+                <a href="contact.html" class="block text-lg hover:text-amber-400 font-bold">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative h-[50vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="/img/together.jpg" alt="Get Involved" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-6 z-10 relative text-center pt-20">
+            <span class="text-amber-400 font-bold uppercase tracking-wider text-sm mb-4 block">Take Action</span>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Get Involved</h1>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+                Your time, skills, and contributions can change lives. Join us in making a difference.
+            </p>
+        </div>
+    </section>
+
+    <!-- Ways to Volunteer -->
+    <section class="section-padding">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div>
+                    <span class="text-amber-400 font-bold uppercase tracking-wider text-sm mb-2 block">Volunteer</span>
+                    <h2 class="text-4xl font-bold mb-6">Become a Volunteer</h2>
+                    <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                        Volunteering is one of the most powerful ways to give back. Whether you can teach, organize
+                        events, or provide medical assistance, your skills are valuable to us.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i class="fas fa-check-circle text-amber-400"></i> Participate in local outreach programs
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i class="fas fa-check-circle text-amber-400"></i> Help with fundraising events
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i class="fas fa-check-circle text-amber-400"></i> Teach children or women vocational skills
+                        </li>
+                    </ul>
+                    <a href="#volunteer-form" class="btn-primary">Sign Up Now</a>
+                </div>
+                <!-- Image -->
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-amber-400/20 rounded-2xl blur-lg"></div>
+                    <img src="/img/happy_picture.jpg" class="relative rounded-2xl w-full shadow-2xl">
+                </div>
+            </div>
+
+            <!-- Donate Section -->
+            <div class="glass-card p-12 text-center rounded-3xl relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+                </div>
+
+                <span class="text-amber-400 font-bold uppercase tracking-wider text-sm mb-4 block">Donate</span>
+                <h2 class="text-4xl font-bold mb-6">Support Our Cause</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+                    Every donation, big or small, goes directly towards our programs. From buying books for a child to
+                    funding a medical camp, your money transforms lives.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <button
+                        class="px-8 py-4 bg-slate-800 border-2 border-slate-700 hover:border-amber-400 rounded-xl font-bold text-xl transition-all">$10</button>
+                    <button
+                        class="px-8 py-4 bg-slate-800 border-2 border-slate-700 hover:border-amber-400 rounded-xl font-bold text-xl transition-all">$25</button>
+                    <button
+                        class="px-8 py-4 bg-slate-800 border-2 border-slate-700 hover:border-amber-400 rounded-xl font-bold text-xl transition-all">$50</button>
+                    <button
+                        class="px-8 py-4 bg-slate-800 border-2 border-slate-700 hover:border-amber-400 rounded-xl font-bold text-xl transition-all">Custom</button>
+                </div>
+                <div class="mt-8">
+                    <button class="btn-primary text-lg px-12 py-4">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section id="volunteer-form" class="section-padding bg-slate-800/50">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto glass-card p-8 md:p-12 border-t-4 border-amber-400">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-4">Volunteer Registration</h2>
+                    <p class="text-slate-400">Fill out this form and we'll get back to you shortly.</p>
+                </div>
+
+                <form action="https://formsubmit.co/lazyclick1@gmail.com" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">First Name</label>
+                            <input type="text" name="first_name" placeholder="First Name"
+                                class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-600 text-white"
+                                required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Last Name</label>
+                            <input type="text" name="last_name" placeholder="Last Name"
+                                class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-600 text-white"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Email Address</label>
+                            <input type="email" name="email" placeholder="john@example.com"
+                                class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-600 text-white"
+                                required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="+91 98765 43210"
+                                class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-600 text-white"
+                                required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Areas of Interest</label>
+                        <select name="interest"
+                            class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors text-white">
+                            <option value="teaching">Teaching / Education</option>
+                            <option value="medical">Medical / Healthcare</option>
+                            <option value="events">Event Organization</option>
+                            <option value="fundraising">Fundraising</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Why do you want to join us?</label>
+                        <textarea name="message" rows="4" placeholder="Tell us a bit about yourself..."
+                            class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-400 transition-colors placeholder-slate-600 text-white"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary py-4 text-lg shadow-lg shadow-amber-400/20">Submit
+                        Application</button>
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="../index.html" class="flex items-center gap-3 mb-6">
+                        <img src="/img/logo_.png" alt="Viaana" class="h-8 w-8 brightness-0 invert">
+                        <span class="text-2xl font-serif font-bold">Viaana</span>
+                    </a>
+                    <p class="text-slate-400 max-w-sm mb-6">
+                        A world where every child has the right to learn, every woman has the power to rise, and every
+                        community has the resources to thrive.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-400 hover:text-black transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="about.html" class="hover:text-amber-400 transition-colors">About Us</a></li>
+                        <li><a href="causes.html" class="hover:text-amber-400 transition-colors">Our Causes</a></li>
+                        <li><a href="get-involved.html" class="hover:text-amber-400 transition-colors">Volunteer</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:text-amber-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-amber-400"></i>
+                            +91-9920282984</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-amber-400"></i>
+                            info@viaana.com</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-amber-400"></i> Mumbai,
+                            India</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2026 Viaana Foundation. All Rights Reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
