@@ -2,14 +2,19 @@ import "../css/style.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { loadComponents } from "./components.js";
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Inject Header and Footer
+  loadComponents();
+
   // --- Navbar Logic ---
+  // Re-select elements after injection
   const navbar = document.getElementById("navbar");
   const mobileBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
-
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       navbar.classList.add("bg-slate-900/90", "backdrop-blur-md", "shadow-lg");
