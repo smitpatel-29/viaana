@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-  <script type="module" crossorigin src="/assets/main-DNAhrLqG.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DkjndZhi.css">
+  <script type="module" crossorigin src="/assets/main-D5lZY7mi.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DGWS0NoQ.css">
 </head>
 
 <body class="bg-slate-900 text-slate-50 overflow-x-hidden">
@@ -23,9 +23,13 @@
     <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="img/first_slide.jpg" alt="Hero" class="w-full h-full object-cover opacity-40 scale-105"
+            <img src="img/first_slide.jpg" alt="Hero"
+                class="w-full h-full object-cover opacity-80 scale-105 saturate-125 transition-transform duration-1000"
                 id="hero-bg">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+            <!-- Gradient for text readability at bottom + subtle top shade -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-slate-900"></div>
+            <!-- Creative warm overlay -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-purple-500/20 mix-blend-overlay"></div>
         </div>
 
         <div class="container mx-auto px-6 z-10 relative text-center">
@@ -233,8 +237,9 @@
     </section>
 
     <!-- Stats Parallax -->
-    <section class="relative py-24 bg-fixed bg-cover bg-center" style="background-image: url('img/together.jpg');">
-        <div class="absolute inset-0 bg-slate-900/90"></div>
+    <section class="relative py-40 bg-fixed bg-cover bg-center" style="background-image: url('img/together.jpg');">
+        <div class="absolute inset-0 bg-slate-900/70"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-amber-500/20 mix-blend-overlay"></div>
         <div class="container mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                 <!-- Stat 1 -->

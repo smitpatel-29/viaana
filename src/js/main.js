@@ -3,8 +3,21 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { loadComponents } from "./components.js";
+import Lenis from "lenis";
 
 gsap.registerPlugin(ScrollTrigger);
+
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Synchronize Lenis and GSAP ScrollTrigger
+lenis.on("scroll", ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Inject Header and Footer
